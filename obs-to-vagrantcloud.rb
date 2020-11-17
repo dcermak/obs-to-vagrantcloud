@@ -101,8 +101,6 @@ raise "Environment variable #{env_var} is required" if ENV[env_var].nil?
 
 options = {}
 OptionParser.new do |opts|
-  # opts.banner = 'Usage: example.rb [options]'
-
   opts.on('--url URI', 'URL to json file published on OBS') do |u|
     options[:url] = u
   end
