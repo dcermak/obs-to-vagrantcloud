@@ -45,6 +45,11 @@ Additional options:
 - `--name NEW_BOX_NAME` Override the name of the Vagrant box.
   This can be used to specify better box names as OBS can sometimes create pretty long ones.
 - `--link`: The box will only be linked to Vagrant Cloud and not uploaded there.
+- `--provider PROVIDER` Only upload the specified provider and not others that
+  are present in the boxes' json file.
+  **NOTE** This option is not available when linking boxes! It does not really
+  make sense to link individual providers, as OBS only keeps exactly those
+  builds around that are mentioned in the json.
 
 ## Linking or Uploading?
 
