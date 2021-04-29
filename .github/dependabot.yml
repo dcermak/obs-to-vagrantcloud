@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: down
+    versions:
+    - 5.2.0
+  - dependency-name: rubocop
+    versions:
+    - 1.13.0
