@@ -93,7 +93,7 @@ def upload_non_existent_boxes(box_from_obs, organization, provider_to_upload)
       end
     end
 
-    matching_version.release if provider_added
+    matching_version.release if provider_added && !matching_version.released?
   end
   matching_box
 end
