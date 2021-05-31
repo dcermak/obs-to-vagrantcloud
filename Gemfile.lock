@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     obs-to-vagrantcloud (0.0.1)
-      down (~> 4.4)
+      down (>= 4.4, < 6.0)
       http (~> 4.0)
       vagrant_cloud (~> 3.0)
 
@@ -16,7 +16,7 @@ GEM
     benchmark (0.1.1)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    down (4.8.1)
+    down (5.2.2)
       addressable (~> 2.5)
     e2mmap (0.1.0)
     excon (0.81.0)
