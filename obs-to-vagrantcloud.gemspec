@@ -12,6 +12,6 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
 
   s.add_runtime_dependency 'down', '>= 4.4', '< 6.0'
-  s.add_runtime_dependency 'http', '~> 4.0'
+  s.add_runtime_dependency 'http', '>= 4', '< 6'
   s.add_runtime_dependency 'vagrant_cloud', '~> 3.0'
 end
