@@ -19,7 +19,7 @@ GEM
     down (5.2.2)
       addressable (~> 2.5)
     e2mmap (0.1.0)
-    excon (0.81.0)
+    excon (0.85.0)
     ffi (1.15.1)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -88,9 +88,10 @@ GEM
       unf_ext
     unf_ext (0.0.7.7)
     unicode-display_width (2.0.0)
-    vagrant_cloud (3.0.4)
+    vagrant_cloud (3.0.5)
       excon (~> 0.73)
       log4r (~> 1.1.10)
+      rexml (~> 3.2.5)
     yard (0.9.26)
 
 PLATFORMS
