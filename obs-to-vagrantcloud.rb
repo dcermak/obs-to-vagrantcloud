@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 require 'vagrant_cloud'
-require 'down'
+require 'down/net_http'
 require 'http'
 require 'optparse'
 require 'optparse/uri'
@@ -83,7 +83,7 @@ def upload_non_existent_boxes(box_from_obs, organization, provider_to_upload)
     not_present_providers.each do |provider|
       prov = matching_version.add_provider(provider['name'])
       begin
-        box_dest = Down.download(provider['url'])
+        box_dest = Down::NetHttp.download(provider['url'], max_redirects: 20)
         matching_box.save
         prov.upload(path: box_dest.path)
         provider_added = true
