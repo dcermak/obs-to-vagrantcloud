@@ -1,5 +1,7 @@
 # obs-to-vagrantcloud
 
+[![RuboCop](https://github.com/dcermak/obs-to-vagrantcloud/actions/workflows/rubocop.yml/badge.svg)](https://github.com/dcermak/obs-to-vagrantcloud/actions/workflows/rubocop.yml)
+
 This is a very simple script that either uploads or links a Vagrant box that has
 been build and published in the [Open Build
 Service](https://openbuildservice.org/) to [Vagrant
