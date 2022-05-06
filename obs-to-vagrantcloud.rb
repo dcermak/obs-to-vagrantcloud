@@ -132,7 +132,7 @@ raise 'Linking only a single provider is not supported' if options[:link] && !op
 
 box_json = JSON.parse(HTTP.get(options[:url]))
 
-account = VagrantCloud::Account.new(access_token: ENV[env_var])
+account = VagrantCloud::Account.new(access_token: ENV.fetch(env_var, nil))
 publisher = account.organization(name: options[:publisher])
 
 box_json['name'] = options[:name] unless options[:name].nil?
